@@ -1,0 +1,29 @@
+print("=== Ejercicio 4 ===")
+# Lista de precios
+precios = [45.0, 120.5, 12.0, 350.0, 85.0, 15.5]
+
+# Variable para acumular el subtotal
+subtotal = 0
+
+# Sumamos cada precio usando un ciclo for
+for precio in precios:
+    subtotal = subtotal + precio
+
+# Determinamos el descuento
+if subtotal > 500:
+    descuento = 20
+elif subtotal >= 200:
+    descuento = 10
+else:
+    descuento = 0
+
+# Calculamos el descuento en dinero
+cantidad_descuento = subtotal * descuento / 100
+
+# Calculamos el total final
+total = subtotal - cantidad_descuento
+
+# Imprimir los resultados
+print(f"Subtotal: ${subtotal:.2f}")
+print(f"Descuento aplicado: {descuento}%")
+print(f"Total final a pagar: ${total:.2f}")

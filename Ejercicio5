@@ -1,0 +1,24 @@
+
+print("=== Ejercicio 5 ===")
+# Lista de números
+numeros = [12, 7, 22, 19, 8, 3, 14, 29, 30, 15]
+
+# Creamos las listas vacías
+pares = []
+impares = []
+
+# Recorremos la lista
+for numero in numeros:
+
+    # Si el residuo de dividir entre 2 es 0, es par
+    if numero % 2 == 0:
+        pares.append(numero)
+    else:
+        impares.append(numero)
+
+# Mostramos los resultados
+print("Números pares:", pares)
+print("Cantidad de pares:", len(pares))
+
+print("Números impares:", impares)
+print("Cantidad de impares:", len(impares))

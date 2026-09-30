@@ -1,0 +1,21 @@
+
+print("=== Ejercicio 7 ===")
+# Lista de asistentes
+asistentes = ["ana", "Carlos", "Beatriz", "ALBERTO", "carmen",
+              "Bernardo", "Alejandro", "andrea"]
+
+# Recorremos la lista para corregir los nombres
+for i in range(len(asistentes)):
+    asistentes[i] = asistentes[i].capitalize()
+
+# Variable para contar los nombres que empiezan con A
+contador = 0
+
+# Revisamos cada nombre
+for nombre in asistentes:
+    if nombre[0] == "A":
+        contador = contador + 1
+
+# Mostramos los resultados
+print("Lista corregida:", asistentes)
+print("Un total de", contador, "personas tienen un nombre que empieza con 'A'")

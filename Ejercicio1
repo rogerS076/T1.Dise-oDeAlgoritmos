@@ -1,0 +1,18 @@
+print("=== Ejercicio 1 ===")
+celsius = float(input("Ingresa la temperatura en °C: "))
+
+# Fórmula de conversión: F = (C * 9/5) + 32
+fahrenheit = (celsius * 9 / 5) + 32
+
+# Clasificación del clima (el orden de los if importa)
+if fahrenheit >= 86:
+    estado = "Clima Caluroso"
+elif fahrenheit >= 50:      # aquí ya sabemos que es menor a 86
+    estado = "Clima Templado"
+else:
+    estado = "Clima Frío"
+
+# Mostramos los resultados
+print("Temperatura en Celsius:", celsius)
+print("Temperatura en Fahrenheit:", fahrenheit)
+print("Estado del clima:", estado) 

@@ -1,0 +1,20 @@
+print("=== Ejercicio 2 ===")
+# Pedimos los datos al usuario
+nombre = input("Ingresa tu nombre completo: ")
+correo = input("Ingresa tu correo electrónico: ")
+
+# Convertimos el nombre a formato de título
+nombre = nombre.title()
+
+# Quitamos espacios al inicio y al final del correo
+correo = correo.strip()
+
+# Revisamos que el correo tenga @ y termine en .com
+if "@" in correo and correo.endswith(".com"):
+    print("Correo válido")
+else:
+    print("Error: Formato de correo inválido")
+
+# Mostramos el nombre y su cantidad de caracteres
+print("Nombre:", nombre)
+print("Cantidad de caracteres:", len(nombre))

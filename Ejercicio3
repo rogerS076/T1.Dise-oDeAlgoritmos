@@ -1,0 +1,38 @@
+print("=== Ejercicio 3 ===")
+# Lista de notas
+notas = [8.5, 9.0, 6.0, 7.5, 10.0, 5.5]
+
+# Variable para acumular la suma
+suma = 0
+
+# Tomamos la primera nota como mayor y menor
+mayor = notas[0]
+menor = notas[0]
+
+# Recorremos la lista
+for nota in notas:
+    suma = suma + nota
+
+    # Buscamos la nota más alta
+    if nota > mayor:
+        mayor = nota
+
+    # Buscamos la nota más baja
+    if nota < menor:
+        menor = nota
+
+# Calculamos el promedio
+promedio = suma / len(notas)
+
+# Determinamos si aprobó o reprobó
+if promedio >= 6.0:
+    resultado = "Aprobado"
+else:
+    resultado = "Reprobado"
+
+# Mostramos los resultados
+print("Suma de las notas:", suma)
+print("Promedio final:", promedio)
+print("Nota más alta:", mayor)
+print("Nota más baja:", menor)
+print("Resultado:", resultado)

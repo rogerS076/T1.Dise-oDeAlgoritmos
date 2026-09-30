@@ -1,0 +1,31 @@
+
+print("=== Ejercicio 8 ===")
+# Lista de palabras
+palabras = ["Python", "variables", "ciclos", "listas", "condicionales", "cadenas"]
+
+# Pedimos la palabra al usuario
+busqueda = input("Ingresa la palabra que quieres buscar: ")
+
+# Convertimos la búsqueda a minúsculas
+busqueda = busqueda.lower()
+
+# Variable para saber si encontramos la palabra
+encontrada = False
+
+# Recorremos la lista
+for i in range(len(palabras)):
+
+    # Comparamos ignorando mayúsculas y minúsculas
+    if palabras[i].lower() == busqueda:
+        print("La palabra '" + palabras[i] + "' se encuentra en la posición", i)
+        encontrada = True
+
+# Si no encontramos la palabra
+if encontrada == False:
+    print("La palabra no fue encontrada")
+    
+    # Mostramos la lista en orden invertido
+    print("Lista en orden invertido:")
+
+    for i in range(len(palabras) - 1, -1, -1):
+        print(palabras[i])
